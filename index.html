@@ -1,10 +1,34 @@
 <html>
 <style>
+ *
+  {
+    box-sizing:border-box;
+  }
   body
   {
     margin:0;
   }
-.header
+  .column
+  {
+    float:left;
+    padding:30px;
+    width:33.3%;
+    background-image:url('https://lh3.googleusercontent.com/proxy/dAhdxRn5uCDRbKrq5iZXvZV3z67mlPX0gAYFgsgOWzr95_lHG7bOjKmj99kDJRSkZJ31GbNYITu9J96hrdFhAHKBQfaBFhogLAUTR0r2nfUoDri3ETv4T7Xg7Q');
+    color:white;
+    font-family:verdana;
+  }
+  row:after
+  {
+    content:"";
+    clear:both;
+    display:text;
+  }
+  @media screen and(max-width:600px)
+    {.column{
+      width:100%;
+      }
+  }
+    .header
 {
   text-align:center;
   background-image:url('https://ak1.picdn.net/shutterstock/videos/1032491681/thumb/1.jpg?ip=x480');
@@ -39,6 +63,22 @@
       <a href="https://www.youtube.com/">Youtube</a>
       <a href="https://www.facebook.com/">facebook</a>
     </div>
+    <div class="row">
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
   </body>
  </html>
   
